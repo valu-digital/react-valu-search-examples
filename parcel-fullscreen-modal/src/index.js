@@ -7,4 +7,6 @@ export const vs = new ValuSearch({
 
 vs.initModal();
 
-vs.bindInput(document.querySelector(".search-input"));
+document.querySelector("button.search").addEventListener("click", () => {
+  vs.activate();
+});

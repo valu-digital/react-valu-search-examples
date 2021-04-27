@@ -23,7 +23,14 @@
 
       .wrap {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+      }
+
+      button.search {
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+        margin-left: 10px;
       }
 
       .title {
@@ -41,14 +48,7 @@
     <header>
       <div class="wrap">
         <div class="title">Header Text</div>
-        <div>
-          <input
-            class="search-input"
-            type="text"
-            placeholder="Search..."
-            aria-describedby="valu-search-instructions-vs"
-          /><button type="button" style="visibility: hidden">x</button>
-        </div>
+        <button class="search" type="button">🔎</button>
       </div>
     </header>
     <main>
