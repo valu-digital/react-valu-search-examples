@@ -18,6 +18,6 @@ build_nextjs() {
 }
 
 
-mkdir out
+mkdir -p out
 
 build_nextjs next-header-input
