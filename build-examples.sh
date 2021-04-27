@@ -27,17 +27,17 @@ build_nextjs() {(
 )}
 
 build_parcel() {(
-        local name=$1
-        add_index_entry "$name"
+    local name=$1
+    add_index_entry "$name"
 
-        cd "$name"
+    cd "$name"
 
-        if [ ! -d node_modules ]; then
-            npm ci
-        fi
+    if [ ! -d node_modules ]; then
+        npm ci
+    fi
 
-        ./node_modules/.bin/parcel build --public-url "/$name" src/index.html
-        mv dist "../out/$name"
+    ./node_modules/.bin/parcel build --public-url "/$name" src/index.html
+    mv dist "../out/$name"
 )}
 
 
