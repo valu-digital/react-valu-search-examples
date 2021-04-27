@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      main {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+      }
+
+      header {
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        background-color: antiquewhite;
+      }
+
+      .wrap {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .title {
+        font-size: 40pt;
+      }
+
+      .search-input {
+        width: 400px;
+        height: 50px;
+        padding-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <div class="title">Header Text</div>
+        <div>
+          <input
+            class="search-input"
+            type="text"
+            placeholder="Search..."
+            aria-describedby="valu-search-instructions-vs"
+          /><button type="button" style="visibility: hidden">x</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Content Title</h1>
+      <p>Yup, this is a website.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ac orci phasellus
+        egestas tellus rutrum. Massa id neque aliquam vestibulum morbi. Aliquam
+        purus sit amet luctus venenatis lectus magna fringilla. Hendrerit dolor
+        magna eget est. Et tortor consequat id porta nibh venenatis cras sed.
+        Morbi tincidunt ornare massa eget egestas purus. Non pulvinar neque
+        laoreet suspendisse interdum. Pellentesque nec nam aliquam sem. Eu sem
+        integer vitae justo eget magna. Amet nulla facilisi morbi tempus
+        iaculis. Nam at lectus urna duis convallis convallis. Eu sem integer
+        vitae justo eget magna fermentum. Et ligula ullamcorper malesuada proin
+        libero nunc. Risus nullam eget felis eget nunc. Iaculis at erat
+        pellentesque adipiscing commodo elit.
+      </p>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
