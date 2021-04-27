@@ -15,7 +15,10 @@ build_nextjs() {(
     add_index_entry "$name"
 
     cd "$name"
-    npm ci
+
+    if [ ! -d node_moduled ]; then
+        npm ci
+    fi
 
     export BASE_PATH="/$name"
     ./node_modules/.bin/next build
@@ -28,7 +31,10 @@ build_parcel() {(
         add_index_entry "$name"
 
         cd "$name"
-        npm ci
+
+        if [ ! -d node_moduled ]; then
+            npm ci
+        fi
 
         ./node_modules/.bin/parcel build --public-url "/$name" src/index.html
         mv dist "../out/$name"
