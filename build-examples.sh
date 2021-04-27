@@ -16,7 +16,7 @@ build_nextjs() {(
 
     cd "$name"
 
-    if [ ! -d node_moduled ]; then
+    if [ ! -d node_modules ]; then
         npm ci
     fi
 
@@ -32,7 +32,7 @@ build_parcel() {(
 
         cd "$name"
 
-        if [ ! -d node_moduled ]; then
+        if [ ! -d node_modules ]; then
             npm ci
         fi
 
