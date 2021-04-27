@@ -63,5 +63,6 @@ build_nextjs next-header-input
 build_nextjs next-header-input-lazy
 build_parcel parcel-fullscreen-modal
 build_parcel parcel-fullscreen-modal-lazy
+build_parcel parcel-header-input-lazy
 
 echo "</body></html>" >> out/index.html
