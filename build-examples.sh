@@ -21,3 +21,4 @@ build_nextjs() {
 mkdir -p out
 
 build_nextjs next-header-input
+build_nextjs next-header-input-lazy
