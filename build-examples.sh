@@ -11,7 +11,7 @@ build_nextjs() {
     cd "$name"
     npm ci
 
-    export BASE_PATH="/react-valu-search-examples/$name"
+    export BASE_PATH="/$name"
     ./node_modules/.bin/next build
     ./node_modules/.bin/next export
     mv out "../out/$name"
