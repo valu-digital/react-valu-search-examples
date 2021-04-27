@@ -16,7 +16,7 @@ for dir in *; do
             npm ci
         fi
 
-        npm install --save-exact @valu/react-valu-search@15.0.0-dev.2e0eaeb286
+        npm install @valu/react-valu-search@^15.0.0
     )
 
 done
