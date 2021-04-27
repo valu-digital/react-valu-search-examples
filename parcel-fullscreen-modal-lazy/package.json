@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@valu/react-valu-search": "^15.0.0",
+    "@valu/react-valu-search": "^15.0.1",
     "next": "^10.1.3",
     "parcel-bundler": "^1.12.5",
     "react": "^17.0.2",

@@ -2,6 +2,8 @@
 
 set -eu
 
+version=@valu/react-valu-search@^15.0.1
+
 
 for dir in *; do
 
@@ -16,7 +18,10 @@ for dir in *; do
             npm ci
         fi
 
-        npm install @valu/react-valu-search@^15.0.0
+        npm install "$version"
     )
 
 done
+
+git add .
+git commit -m "Upgrade @valu/react-valu-search to $version"
