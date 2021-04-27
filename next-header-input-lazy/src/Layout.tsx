@@ -8,7 +8,8 @@ import {
 export function Layout(props: { children: React.ReactNode }) {
   return (
     <ValuSearchLazyProvider>
-      <LayoutInner {...props} />
+      <Header />
+      <Content {...props} />
     </ValuSearchLazyProvider>
   );
 }
@@ -45,19 +46,16 @@ function Header() {
   );
 }
 
-export function LayoutInner(props: { children: React.ReactNode }) {
+function Content(props: { children: React.ReactNode }) {
   const { isActive, module } = useLazyValuSearch();
 
   return (
-    <>
-      <Header />
-      <main>
-        {isActive && module ? (
-          <module.ExampleValuSearchResults />
-        ) : (
-          props.children
-        )}
-      </main>
-    </>
+    <main>
+      {isActive && module ? (
+        <module.ExampleValuSearchResults />
+      ) : (
+        props.children
+      )}
+    </main>
   );
 }
