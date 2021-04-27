@@ -14,6 +14,17 @@ export function Layout(props: { children: React.ReactNode }) {
   );
 }
 
+function Menu() {
+  return (
+    <menu>
+      <a href="#link1">Link 1</a>
+      <a href="#link2">Link 2</a>
+      <a href="#link3">Link 3</a>
+      <a href="#link4">Link 5</a>
+    </menu>
+  );
+}
+
 function Header() {
   const { isActive, deactivate } = useLazyValuSearch();
   const ref = useLazyValuSearchInput();
@@ -41,6 +52,7 @@ function Header() {
             x
           </button>
         </div>
+        <Menu />
       </div>
     </header>
   );

@@ -32,3 +32,8 @@ header {
   height: 50px;
   padding-left: 5px;
 }
+
+menu a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
