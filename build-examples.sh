@@ -28,7 +28,7 @@ build_parcel() {(
         add_index_entry "$name"
 
         cd "$name"
-        # npm ci
+        npm ci
 
         ./node_modules/.bin/parcel build --public-url "/$name" src/index.html
         mv dist "../out/$name"
