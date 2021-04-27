@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/db5d250d-3aa1-4cb0-acc8-8a0dd11e54d3/deploy-status)](https://app.netlify.com/sites/react-valu-search-examples/deploys)
+
 # React Valu Search Examples
 
 Examples using the [@valu/react-valu-search](https://docs.valusearch.pro/react-valu-search/introduction) package.
