@@ -13,3 +13,12 @@ cd [example-dir]
 npm ci
 npm run dev
 ```
+
+Eg.
+
+```
+git clone https://github.com/valu-digital/react-valu-search-examples.git
+cd react-valu-search-examples/parcel-fullscreen-modal
+npm ci
+npm run dev
+```
