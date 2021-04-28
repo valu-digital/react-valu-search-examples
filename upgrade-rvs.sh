@@ -2,7 +2,7 @@
 
 set -eu
 
-version="^15.0.1"
+version="15.0.4"
 
 
 for dir in *; do
@@ -18,7 +18,7 @@ for dir in *; do
             npm ci
         fi
 
-        npm install "@valu/react-valu-search@${version}"
+        npm install -E "@valu/react-valu-search@${version}"
     )
 
 done
