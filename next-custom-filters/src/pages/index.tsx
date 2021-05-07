@@ -72,7 +72,7 @@ export function Page() {
         <button
           type="button"
           onClick={() => {
-            setTag(null);
+            setTag("");
           }}
         >
           ╳
