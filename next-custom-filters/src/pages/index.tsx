@@ -43,7 +43,7 @@ function TagButton(props: {
 }
 
 export function Page() {
-  const [groups, setGroups] = useState<Group[]>(createGroups(""));
+  const [groups, setGroups] = useState(createGroups(""));
   const [tag, setTagState] = useState("");
   const ref = vs.useInput();
 
