@@ -39,10 +39,14 @@ function useGroups(): Group[] {
 
 function TagButton(props: { children: React.ReactNode; tag: string }) {
     const snap = useSnapshot(state);
+    const checked = snap.tags.includes(props.tag);
 
     return (
         <button
             type="button"
+            style={{
+                fontWeight: checked ? "bold" : "normal",
+            }}
             onClick={() => {
                 if (snap.tags.includes(props.tag)) {
                     state.tags = state.tags.filter((tag) => tag !== props.tag);
@@ -51,8 +55,8 @@ function TagButton(props: { children: React.ReactNode; tag: string }) {
                 }
             }}
         >
+            <span style={{ fontSize: "150%" }}>{checked ? "☑ " : "☐ "}</span>
             {props.children}
-            {snap.tags.includes(props.tag) && "*"}
         </button>
     );
 }
@@ -79,7 +83,7 @@ export function Page() {
     return (
         <main>
             <input className="text-input" ref={ref} />
-
+            <span style={{ fontSize: "200%", marginLeft: "1rem" }}>🔍</span>
             <div className="filters">
                 <TagButton tag="talous">Talous</TagButton>
 
@@ -96,7 +100,6 @@ export function Page() {
                     ╳
                 </button>
             </div>
-
             <vs.Provider groups={groups}>
                 <vs.Results />
             </vs.Provider>
