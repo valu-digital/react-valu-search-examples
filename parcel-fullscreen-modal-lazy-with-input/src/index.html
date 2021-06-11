@@ -26,6 +26,11 @@
         align-items: center;
       }
 
+      .outed-wrap {
+        display: flex;
+        flex-direction: column;
+      }
+
       button.search {
         font-size: 30px;
         width: 60px;
@@ -37,7 +42,7 @@
         font-size: 40pt;
       }
 
-      .search-input {
+      .outside-input {
         width: 400px;
         height: 50px;
         padding-left: 5px;
@@ -59,10 +64,12 @@
   </head>
   <body>
     <header>
-      <div class="wrap">
-        <div class="title">Header Text</div>
-        <input type="text" id="outside-input"/>
-        <button class="search" type="button">🔎</button>
+      <div class="outer-wrap">
+        <div class="wrap">
+          <div class="title">Header Text</div>
+          <button class="search" type="button">🔎</button>
+        </div>
+        <input class="outside-input" type="text" placeholder="Search..." />
       </div>
     </header>
     <main>
