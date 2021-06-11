@@ -65,6 +65,7 @@ build_nextjs next-custom-filters
 build_nextjs next-valtio-filters
 build_parcel parcel-fullscreen-modal
 build_parcel parcel-fullscreen-modal-lazy
+build_parcel parcel-fullscreen-modal-lazy-with-input
 build_parcel parcel-header-input
 build_parcel parcel-header-input-lazy
 
