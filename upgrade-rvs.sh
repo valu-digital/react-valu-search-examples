@@ -2,7 +2,7 @@
 
 set -eu
 
-version="15.0.4-dev.a4936da923"
+version="18.6.3"
 
 
 for dir in *; do

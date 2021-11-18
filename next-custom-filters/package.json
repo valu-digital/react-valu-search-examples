@@ -11,7 +11,7 @@
   "dependencies": {
     "@types/react": "^17.0.4",
     "@types/react-dom": "^17.0.3",
-    "@valu/react-valu-search": "15.1.1-dev.3cdd4bee9b",
+    "@valu/react-valu-search": "18.6.3",
     "next": "^10.1.3",
     "prettier": "^2.3.0",
     "react": "^17.0.2",
