@@ -7,9 +7,7 @@ const loader = new LazyValuSearch({
 loader.init(() => {
   const input = select(".search-input", HTMLInputElement);
 
-  input.addEventListener("focus", () => {
-    loader.load();
-  });
+   loader.loadOnFocus(input)
 
   return (vs) => {
     vs.bindInput(input);
